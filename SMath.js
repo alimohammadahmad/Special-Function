@@ -9,4 +9,4 @@ function coth(x){if(sinh(x)==0){console.error("error can't divide by 0");}else{r
 function asinh(x){return log(x+sqrt(x*x+1));}function acosh(x){	if(x<1){console.error("error the domain is [1,infinty]");}else{return log(x+sqrt(x*x-1));}}
 function atanh(x){if(x>1 || x<-1){}else{return log((x+1)/(1-x))/2;}}function acoth(x){	if(x<1 || x>-1){console.error("error the domain [-1,1] undefined");}else{return log((x+1)/(x-1))/2;}
 }
-
+function RamanujanfractionPHI(x){if(x==1) return 2;else return 1+1/RamanujanfractionPHI(x-1);}
